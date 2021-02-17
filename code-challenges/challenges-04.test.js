@@ -73,11 +73,18 @@ Write a function named isCapitalized that takes in a string. This function shoul
 Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
-const isCapitalized = (str) => {
-  // Solution code here...
-  let regex = /(\b[A-Z])([a-z]*)/g;
-return str.match(regex);
 
+const isCapitalized = (str) => {
+    // let patt=/\b[A-Z][a-z]+/g;
+  let patt=/\b[A-Z](\w)*/g;
+
+  let found=str.match(patt);
+
+  let Arr=[];
+  if(found!==null){
+  Arr=found;
+  }
+return Arr
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -87,7 +94,15 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  // Solution code here...
+  // Solution code here..
+  let ARR=[];
+  arr.forEach(element => {
+    let patt=/^[A-J]/
+    if(patt.test(element)){
+      ARR.push(element);
+    }
+  });
+  return ARR;
 };
 
 /* ------------------------------------------------------------------------------------------------

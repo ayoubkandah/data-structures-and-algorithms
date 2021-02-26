@@ -258,7 +258,7 @@ trigger=true
 }
 return trigger
 }
-// console.log(trueORfalse())
+// console.log(trueORfalse()
 return trueORfalse()
   })
 
@@ -268,6 +268,7 @@ return trueORfalse()
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
+
 
 All the code below will verify that your functions are working to solve the challenges.
 

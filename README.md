@@ -9,9 +9,11 @@ make reverse array without using reverse method
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? --> 
 
+
 ## Solution
 <!-- Embedded whiteboard image -->
 ![code01](assets/codeChallenge01.png)
+
 # Data Structures and Algorithms
 
 See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-code-challenges), in the Code 301 Setup Guide.

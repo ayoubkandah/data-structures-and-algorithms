@@ -1,20 +1,4 @@
 
-
-# Reverse an Array
-<!-- Short summary or background information -->
-using Result.push(Arr[Arr.length-i]) inside the loop to make a Result array equal reverse array
-
-## Challenge
-<!-- Description of the challenge -->
-make reverse array without using reverse method
-
-## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? --> 
-
-## Solution
-<!-- Embedded whiteboard image -->
-![code01](https://i.ibb.co/rbpxQ2m/code-Challenge01.png)
-
 # Data Structures and Algorithms
 
 See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-code-challenges), in the Code 301 Setup Guide.

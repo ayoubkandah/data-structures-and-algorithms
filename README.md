@@ -18,7 +18,7 @@ make reverse array without using reverse method
 # Data Structures and Algorithms
 
 See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-code-challenges), in the Code 301 Setup Guide.
-![code01](https://i.ibb.co/rbpxQ2m/code-Challenge01.png)
+
 ## Repository Quick Tour and Usage
 
 ### 301 Code Challenges

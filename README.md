@@ -12,7 +12,6 @@ make reverse array without using reverse method
 ## Solution
 <!-- Embedded whiteboard image -->
 ![code01](assets/codeChallenge01.png)
-
 # Data Structures and Algorithms
 
 See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-code-challenges), in the Code 301 Setup Guide.

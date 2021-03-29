@@ -1,3 +1,4 @@
+
 # arrayShift an Array
 <!-- Short summary or background information -->
 using splice(Arr.length/2,"the value what we want")

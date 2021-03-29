@@ -12,4 +12,4 @@ make reverse array without using reverse method
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![code01](../assets/codeChallenge01.png)
+![code01](../../assets/codeChallenge01.png)

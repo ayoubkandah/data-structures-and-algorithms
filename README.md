@@ -3,6 +3,7 @@
 | :---        |
 |[Array Reverse](https://github.com/ayoubkandah/data-structures-and-algorithms/blob/main/challenges/arrayReverse/Readme.md)|
 |[Array Shoft](https://github.com/ayoubkandah/data-structures-and-algorithms/tree/main/challenges/arrayShift)|
+|[array Binary Search](https://github.com/ayoubkandah/data-structures-and-algorithms/tree/main/challenges/arrayBinarySearch%20)|
 # Data Structures and Algorithms
 
 See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-code-challenges), in the Code 301 Setup Guide.

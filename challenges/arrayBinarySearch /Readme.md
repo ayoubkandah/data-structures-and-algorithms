@@ -1,15 +1,15 @@
-binarySearch 
+# binarySearch 
 
 using while loop and make mean every time to get the number of index for specific value
 
 
-Challenge
+# Challenge
 get number of index by using binarySearch 
 
-for Testing 
+# for Testing 
 
 npm test arraBinary.test.js
 
-Solution
+# Solution
 
 ![binary](../../assets/code3.png)

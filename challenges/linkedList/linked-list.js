@@ -42,6 +42,7 @@ includes(value){
 for(let x=0;x<this.length;x++){
 if(e.val==value){
   trigger= true
+  
 }else{
   e=e.next
   // return false
@@ -65,7 +66,203 @@ e=e.next
 }
 return result
 }
+
+append(value){
+  let newNode=new Node(value)
+let nextNode=this.head
+// console.log(nextNode.next)
+// console.log( headNode.next)
+ while(nextNode.next){
+  //  nextNode=.next
+   nextNode=nextNode.next
+ }
+ this.length++;
+  nextNode.next=newNode
+headNode=newNode
+}
+insertBefore(value, newVal){
+  
+  let trigger =true
+let e=this.head
+let mirror=null;
+let mirror2;
+for(let x=1;x<=this.length;x++){
+// console.log(trigger)
+if(x<this.length ){
+mirror2=e.val
+}
+// console.log(mirror2)
+
+//    let newNode=new Node(mirror)
+// e.next=newNode
+// break
+// }
+
+if(trigger==false){
+// console.log(e)
+  if(x<this.length ){
+
+
+            // console.log(e.next)
+      //  console.log(e.next.val)
+
+// console.log("qwa")
+  // let newNode=new Node(mirror)
+e.val=mirror
+
+
+mirror=mirror2
+e=e.next
+ 
+
+}
+   else{
+
+  let newNode=new Node(mirror)
+let nextNode=this.head
+// console.log(nextNode.next)
+// console.log( headNode.next)
+ while(nextNode.next){
+  //  nextNode=.next
+   nextNode=nextNode.next
+ }
+ this.length++;
+  nextNode.next=newNode
+
+
+     break
+     }
+}
+if(trigger==true && e.val==value ){
+            
+
+   let newNode=new Node(newVal)
+mirror= e.val  
+   e.val=newNode.val
+   trigger=false
+   this.length++;
+
+
+    if(e.next!==null){
+ e=e.next
+  
+
+
+ }else if (e.next==null){
+      //  console.log("ss")
+
+let newNode=new Node(mirror)
+     e.next=newNode 
+     break
+     }
+    
+  
+}else if (trigger){
+  e=e.next
+              
+
+  // return false
 }
 
 
-module.exports=Linked
+}
+
+
+}
+insertAfter(value, newVal){
+
+let trigger =true
+let e=this.head
+let mirror=null;
+let mirror2;
+for(let x=1;x<=this.length;x++){
+// console.log(trigger)
+if(x<this.length ){
+mirror2=e.val
+}
+// console.log(mirror2)
+
+//    let newNode=new Node(mirror)
+// e.next=newNode
+// break
+// }
+
+if(trigger==false){
+// console.log(e)
+  if(x<this.length ){
+
+
+            // console.log(e.next)
+      //  console.log(e.next.val)
+
+// console.log("qwa")
+  // let newNode=new Node(mirror)
+e.val=mirror
+
+
+mirror=mirror2
+e=e.next
+ 
+
+}
+   else{
+
+  let newNode=new Node(mirror)
+let nextNode=this.head
+// console.log(nextNode.next)
+// console.log( headNode.next)
+ while(nextNode.next){
+  //  nextNode=.next
+   nextNode=nextNode.next
+ }
+ this.length++;
+  nextNode.next=newNode
+     
+
+     break
+     }
+}
+if(trigger==true && e.val==value ){
+            
+console.log(e.next.val)
+   let newNode=new Node(newVal)
+mirror= e.next.val  
+   e.next.val=newNode.val
+   trigger=false
+   this.length++;
+
+
+    if(e.next!==null){
+ e=e.next
+  
+
+
+ }else if (e.next==null){
+      //  console.log("ss")
+
+let newNode=new Node(mirror)
+     e.next=newNode 
+     break
+     }
+    
+  
+}else if (trigger){
+  e=e.next
+              
+
+  // return false
+}
+
+
+}
+
+}
+
+}
+
+let LL=new Linked()
+LL.insert(10)
+LL.insert(12)
+LL.insert(15)
+LL.insertAfter(12,13)
+console.log(LL.head)

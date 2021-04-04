@@ -1,4 +1,5 @@
 'use strict'
+const Linked = require("./linked-list")
 const linked=require("./linked-list")
 
 describe("testing",()=>{
@@ -34,5 +35,56 @@ expect(LL.includes(99)).toEqual(false)
 })
 test("toString",()=>{
 expect(LL.toString()).toEqual(`{${nextTest}}-->{${nextTest2}}-->${null}`)
+})
+
+test("Append",()=>{
+    LL.append(80)
+    // console.log(LL.head,"--------")
+expect(LL.head.next.next.next.val).toEqual(80)
+})
+
+
+test("Before middle",()=>{
+    // LL.append(80)
+    LL.insertBefore(nextTest2,55)
+    // console.log(LL.head,"--------")
+expect(LL.head.next.next.val).toEqual(55)
+})
+test("Before first",()=>{
+    let LL2=new Linked()
+    // LL.append(80)
+    let testNum=10
+    let nextTest=12
+    LL2.insert(testNum)
+    LL2.insert(nextTest)
+    LL2.insertBefore(testNum,1)
+    // console.log(LL.head,"--------")
+expect(LL2.head.val).toEqual(1)
+})
+test("After middle",()=>{
+    let LL3=new Linked()
+    // LL.append(80)
+    let testNum=10
+    let nextTest=12
+    LL3.insert(testNum)
+    LL3.insert(nextTest)
+    LL3.insert(14)
+    LL3.insertAfter(nextTest,6)
+    // console.log(LL.head,"--------")
+expect(LL3.head.next.next.val).toEqual(6)
+
+})
+test("After last",()=>{
+    let LL3=new Linked()
+    // LL.append(80)
+    let testNum=10
+    let nextTest=12
+    LL3.insert(testNum)
+    LL3.insert(nextTest)
+    LL3.insert(14)
+    LL3.insertAfter(14,6)
+    // console.log(LL.head,"--------")
+expect(LL3.head.next.next.next.val).toEqual(6)
+
 })
 })

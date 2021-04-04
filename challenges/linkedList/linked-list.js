@@ -189,7 +189,7 @@ mirror2=e.val
 
 if(trigger==false){
 // console.log(e)
-  if(x<this.length ){
+  if(x<this.length &&e.next ){
 
 
             // console.log(e.next)
@@ -197,11 +197,12 @@ if(trigger==false){
 
 // console.log("qwa")
   // let newNode=new Node(mirror)
+  e=e.next
 e.val=mirror
-
+console.log(e.val)
 
 mirror=mirror2
-e=e.next
+
  
 
 }
@@ -217,30 +218,23 @@ let nextNode=this.head
  }
  this.length++;
   nextNode.next=newNode
-     
-
      break
      }
 }
 if(trigger==true && e.val==value ){
-            
-console.log(e.next.val)
-   let newNode=new Node(newVal)
-mirror= e.next.val  
-   e.next.val=newNode.val
-   trigger=false
-   this.length++;
-
 
     if(e.next!==null){
+   let newNode=new Node(newVal)
+mirror= e.next.val
+   e.next.val=newNode.val
+// e=e.next
+   trigger=false
+   this.length++;
  e=e.next
-  
-
 
  }else if (e.next==null){
       //  console.log("ss")
-
-let newNode=new Node(mirror)
+let newNode=new Node(newVal)
      e.next=newNode 
      break
      }
@@ -260,9 +254,6 @@ let newNode=new Node(mirror)
 
 }
 
-let LL=new Linked()
-LL.insert(10)
-LL.insert(12)
-LL.insert(15)
-LL.insertAfter(12,13)
-console.log(LL.head)
+// let LL=new Linked()
+
+module.exports=Linked

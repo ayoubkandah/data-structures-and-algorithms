@@ -87,4 +87,107 @@ test("After last",()=>{
 expect(LL3.head.next.next.next.val).toEqual(6)
 
 })
+test("kth From End if k large than the length",()=>{
+    let LL4=new Linked()
+    // LL.append(80)
+    let head=10
+    let next1=12
+    let next2=14
+    let next3=16
+    let next4=17
+    let next5=17
+
+    LL4.insert(head)
+    LL4.insert(next1)
+    LL4.insert(next2)
+    LL4.insert(next3)
+    LL4.insert(next4)
+    LL4.insert(next5)
+
+    let e=LL4.kthFromEnd(7)
+    // console.log(e,"-------------")
+    expect(e).toEqual("Exception")
+
+})
+test("kth From End if k large than the length",()=>{
+    let LL4=new Linked()
+    // LL.append(80)
+    let head=10
+    let next1=12
+    let next2=14
+    let next3=16
+    let next4=17
+    let next5=18
+
+    LL4.insert(head)
+    LL4.insert(next1)
+    LL4.insert(next2)
+    LL4.insert(next3)
+    LL4.insert(next4)
+    LL4.insert(next5)
+
+    let e=LL4.kthFromEnd(5)
+    // console.log(e,"-------------")
+    expect(e).toEqual(head)
+
+})
+test("kth From End if k equall the length",()=>{
+    let LL4=new Linked()
+    // LL.append(80)
+    let head=10
+    let next1=12
+    let next2=14
+    let next3=16
+    let next4=17
+    let next5=18
+
+    LL4.insert(head)
+    LL4.insert(next1)
+    LL4.insert(next2)
+    LL4.insert(next3)
+    LL4.insert(next4)
+    LL4.insert(next5)
+
+    let e=LL4.kthFromEnd(-3)
+    // console.log(e,"-------------")
+    expect(e).toEqual("Exception")
+
+})
+
+test("kth From End if k in the middle of the length",()=>{
+    let LL4=new Linked()
+    // LL.append(80)
+    let head=10
+    
+    LL4.insert(head)
+    
+    let e=LL4.kthFromEnd(0)
+    // console.log(e,"-------------")
+    expect(e).toEqual(head)
+
+})
+
+test("kth From End if k in the middle of  the length",()=>{
+    let LL4=new Linked()
+    // LL.append(80)
+    let head=10
+    let next1=12
+    let next2=14
+    let next3=16
+    let next4=17
+    let next5=18
+
+    LL4.insert(head)
+    LL4.insert(next1)
+    LL4.insert(next2)
+    LL4.insert(next3)
+    LL4.insert(next4)
+    LL4.insert(next5)
+
+    let e=LL4.kthFromEnd(2)
+    // console.log(e,"-------------")
+    expect(e).toEqual(next3)
+
+})
+
 })

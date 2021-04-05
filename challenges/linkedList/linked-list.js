@@ -252,8 +252,28 @@ let newNode=new Node(newVal)
 
 }
 
+kthFromEnd(k){
+  if(k>this.length || k<0){
+    return "Exception"
+  }else{
+let trigger=false;
+let calc=this.length-k-1
+// console.log(calc)
+    let e=this.head
+for(let x=0;x<this.length;x++){
+if(x==calc){
+return e.val
+}else{
+  e=e.next
+  // return false
+}
+}
+}
+}
 }
 
-// let LL=new Linked()
+
+
+
 
 module.exports=Linked

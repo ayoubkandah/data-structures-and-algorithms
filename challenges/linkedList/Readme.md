@@ -11,7 +11,7 @@ create class for node and class for LL and make function that Insert values and 
 
 ## CODE 06
 ### [Pull_Request with check lsit code Challenge 06](https://github.com/ayoubkandah/data-structures-and-algorithms/pull/20)
-
+![code06](./code06.png)
 ## CODE 07
 ### [Pull_Request with check lsit code Challenge 07](https://github.com/ayoubkandah/data-structures-and-algorithms/pull/22)
 ![code07](./code07.png)

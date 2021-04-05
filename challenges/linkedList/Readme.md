@@ -8,3 +8,4 @@ how to insert many values
 create class for node and class for LL and make function that Insert values and include value and tostring fun 
 ## Test 
 * for test  npm test linked-list.
+## [Pull_Request with check lsit codem 06](https://github.com/ayoubkandah/data-structures-and-algorithms/pull/18)

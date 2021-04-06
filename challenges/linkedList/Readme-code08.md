@@ -7,6 +7,8 @@ how to merge it in specific way
 <!-- Embedded whiteboard image -->
 ## Test 
 * for test  npm test linked-list.
+## [Pull request](https://github.com/ayoubkandah/data-structures-and-algorithms/pull/23)
+
 
 ## White Board 
 ![aa](./assets/code08.png)

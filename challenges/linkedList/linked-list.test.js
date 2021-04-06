@@ -34,7 +34,7 @@ expect(LL.includes(nextTest)).toEqual(true)
 expect(LL.includes(99)).toEqual(false)
 })
 test("toString",()=>{
-expect(LL.toString()).toEqual(`{${nextTest}}-->{${nextTest2}}-->${null}`)
+expect(LL.toString()).toEqual(`{${testNum}}-->{${nextTest}}-->{${nextTest2}}-->${null}`)
 })
 
 test("Append",()=>{
@@ -190,4 +190,26 @@ test("kth From End if k in the middle of  the length",()=>{
 
 })
 
+test("kth From End if k in the middle of  the length",async ()=>{
+    let LL5=new Linked()
+    let LL6=new Linked()
+    // LL.append(80)
+    let head=10
+    let next1=12
+    let next2=14
+    LL5.insert(head)
+    LL5.insert(next1)
+    LL5.insert(next2)
+    LL6.insert(head+10)
+    LL6.insert(next1+10)
+    // let e=LL5.kthFromEnd(2)
+    // let e2=LL5.kthFromEnd(2)
+let e= await LL5.zipLists(LL5,LL6)
+console.log(e,"0----------------")
+    // console.log(e,"-------------")
+    expect(e.toString()).toEqual( "{10}-->{20}-->{12}-->{22}-->{14}-->null")
+    
+    expect(e.length).toEqual( 5)
+
+})
 })

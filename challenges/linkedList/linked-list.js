@@ -56,12 +56,13 @@ toString(){
   let arr="-->"
   let result="";
   let e=this.head
-for(let x=0;x<this.length;x++){
-if(e.next){
-result+=`{${e.next.val}}${arr}`
+for(let x=1;x<=this.length;x++){
+
+result+=`{${e.val}}${arr}`
 e=e.next
-}else{
-  result+=null
+
+if(x==this.length){
+result+=null
 }
 }
 return result
@@ -270,9 +271,37 @@ return e.val
 }
 }
 }
+zipLists(list1,list2){
+  let L1=list1.head
+  let L2=list2.head
+  let result=new Linked()
+  let loopT
+if(list1.length>list2.length){
+  loopT=list1.length
+  // console.log(loopT)
+}else{
+
+  loopT=list2.length
+      // console.log(loopT)
+
+}
+// console.log(L1.val)
+for(let x=0;x<loopT;x++){
+if(L1){
+  result.insert(L1.val)
+  L1=L1.next
+}
+if(L2){
+  result.insert(L2.val)
+  L2=L2.next
 }
 
+}
+//  console.log(result.toString()) 
+  return result
+} 
 
+}
 
 
 

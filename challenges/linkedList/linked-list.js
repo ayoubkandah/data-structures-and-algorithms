@@ -301,6 +301,23 @@ if(L2){
   return result
 } 
 
+reverse(list){
+  let c=list.head
+  let newList=new Linked()
+  newList.insert(c.val)
+  let newValue=c.val;
+  let p=list.head.val
+  let temp=c.val
+  while(c.next){
+    c=c.next
+  newValue=c.val
+        newList.insertBefore(temp,newValue)
+  temp=c.val
+  }
+  
+  console.log(newList.toString())
+  return newList
+  }
 }
 
 

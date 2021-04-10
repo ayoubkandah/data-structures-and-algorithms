@@ -8,6 +8,6 @@ how to multiple decueue
 create class for PQ make a two method for enqueue and dequeue
 ## Test 
 * for test  npm test queue-with-stacks.
-
+## [pull_request](https://github.com/ayoubkandah/data-structures-and-algorithms/pull/25)
 ## white board
 ![img](./code11.png)

@@ -101,6 +101,32 @@ class Tree {
     }
     return arr
   }
+
+  breadthFirst() {
+    let val = []
+    let Arr = []
+    let temp = this.root
+    Arr.push(temp);
+    for(let x=-3;x<=Arr.length;x++){
+        temp = Arr.shift()
+        // console.log(temp)
+        val.push(temp.value)
+
+        if (temp.left){  
+       Arr.push(temp.left)
+      
+        }
+        
+        if (temp.right){
+          Arr.push(temp.right)
+        
+        }
+        
+        
+    }
+    return val;
+}
+
 }
 
 

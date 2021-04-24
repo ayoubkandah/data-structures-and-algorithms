@@ -31,6 +31,10 @@ describe('Binary Tree', () => {
         let postOrder = tree.postOrder();
         expect(postOrder).toEqual(expected);
     });
+    it('breadth first TEST', () => {
+        let expected = ["A", "B", "C", "D","E"]
+        expect(tree.breadthFirst()).toEqual(expected)
+    });
 });
 describe('Binary Search Test', () => {
     it('can successfully instantiate an empty tree', () => {
@@ -65,4 +69,6 @@ describe('Binary Search Test', () => {
         expect(tree.contains(15)).toBe(true);
         expect(tree.contains(19)).toBe(false);
     });
+
+
 });

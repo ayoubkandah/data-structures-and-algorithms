@@ -9,6 +9,6 @@ make a loop that push value to arr if the left exist and after that push in the 
 * for test  npm test tree.js
 
 whiteboard
-![code](./code17.png)
+![code](../code17.png)
 
 [pull-req](https://github.com/ayoubkandah/data-structures-and-algorithms/pull/32)

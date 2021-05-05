@@ -1,35 +1,30 @@
-function SelectionSort(arr){
-    let Arr=arr
-    let output=[]
-    let trigger;
-    let j
-    let x=0
-    for(x;x<Arr.length;x++){
-    trigger=false
-      
-    for( j=0;j<Arr.length;j++){
-      // console.log(Arr[x],"||",Arr[j])
-      if(Arr[x]<Arr[j]){
-      
-    trigger=true;
-    break;
+let insertionSort = (Arr) => {
+
+  for (let i = 1; i < Arr.length; i++) {
+      let temp = Arr[i];
+      let j = i - 1;
+      while (Arr[j] > temp) {
+        // console.log(j)
+        // console.log( Arr)
+          Arr[j + 1] = Arr[j];
+        // console.log( Arr)
+          j = j - 1;
+          
       }
-    }
-    if(!trigger){
-    output.push(Arr[x])
-    Arr[x]=null
-    // console.log(Arr)
-    x=-1
-    }
-    
-    if(Arr.length==output.length){
-      break;
-    }
-    }
-    return output.reverse()
-    }
+      // console.log(j)
+      Arr[j + 1] = temp;
+        // console.log( Arr)
+  }
+  // console.log(Arr)
+  return Arr;
+
+};
+
+
+
+
     
     // console.log(SelectionSort([8,4,23,42,16,15]))
     
     // ,23,42,16,15
-module.exports=  SelectionSort
+module.exports=  insertionSort

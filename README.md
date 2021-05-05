@@ -1,20 +1,10 @@
-# Reverse an Array
-<!-- Short summary or background information -->
-using Result.push(Arr[Arr.length-i]) inside the loop to make a Result array equal reverse array
-
-## Challenge
-<!-- Description of the challenge -->
-make reverse array without using reverse method
-
-## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? --> 
-
-
-## Solution
-<!-- Embedded whiteboard image -->
-![code01](assets/codeChallenge01.png)
-
-
+# Table Of Content
+| Code Challenge 401 | 
+| :---        |
+|[Array Reverse](https://github.com/ayoubkandah/data-structures-and-algorithms/blob/main/challenges/arrayReverse/Readme.md)|
+|[Array Shoft](https://github.com/ayoubkandah/data-structures-and-algorithms/tree/main/challenges/arrayShift)|
+|[array Binary Search](https://github.com/ayoubkandah/data-structures-and-algorithms/tree/main/challenges/arrayBinarySearch%20)|
+|[Linked List](https://github.com/ayoubkandah/data-structures-and-algorithms/tree/main/challenges/linkedList)|
 # Data Structures and Algorithms
 
 See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-code-challenges), in the Code 301 Setup Guide.

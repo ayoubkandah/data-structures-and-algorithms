@@ -5,7 +5,7 @@ make a sort by quick sort function
 ## Test 
 * for test  npm test quicksort.
 
-
+## [Pull_Request](https://github.com/ayoubkandah/data-structures-and-algorithms/pull/36)
 
 whiteboard
 

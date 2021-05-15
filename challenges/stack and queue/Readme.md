@@ -5,9 +5,12 @@ how to insert many values
 ## Approach & Efficiency
 ## API
 <!-- Embedded whiteboard image -->
-make a class for stack that have push method  that add value to the top and pop method that delete top value and peek that get last data , make class for queue have enqueue method that add value to the end and dequeue that delete front value , isEmpty that return true if list not have values and false if not 
-## Test 
+
+create class for node and class for STACK && QUEUE and make function that PUSH AND ENQUEUE values and POP() DEQUEUE  value and isEmpty() and peek()
+## Test
 * for test  npm test stack-and-queue.
 ## [Pull Request](https://github.com/ayoubkandah/data-structures-and-algorithms/pull/24) 
 ## white board
 ![img](./code10.png)
+
+

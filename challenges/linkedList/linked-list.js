@@ -1,4 +1,5 @@
 'use strict'
+
 let headNode;
 class Node {
 constructor(val){
@@ -15,7 +16,7 @@ this.length=0;
 }
 insert(value){
 if(this.head==null){
-       headNode=new Node(value)    
+       headNode=new Node(value)
 
 this.head=headNode
 this.length++;
@@ -27,7 +28,7 @@ let nextNode=this.head
  while(nextNode.next){
   //  nextNode=.next
    nextNode=nextNode.next
-  
+
  }
  this.length++;
 
@@ -40,9 +41,9 @@ includes(value){
   let trigger=false;
     let e=this.head
 for(let x=0;x<this.length;x++){
-if(e.val==value){
+if(e.val===value){
   trigger= true
-  
+
 }else{
   e=e.next
   // return false
@@ -52,7 +53,7 @@ return trigger
 }
 
 toString(){
-  
+
   let arr="-->"
   let result="";
   let e=this.head
@@ -61,7 +62,7 @@ for(let x=1;x<=this.length;x++){
 result+=`{${e.val}}${arr}`
 e=e.next
 
-if(x==this.length){
+if(x===this.length){
 result+=null
 }
 }
@@ -82,7 +83,7 @@ let nextNode=this.head
 headNode=newNode
 }
 insertBefore(value, newVal){
-  
+
   let trigger =true
 let e=this.head
 let mirror=null;
@@ -99,7 +100,7 @@ mirror2=e.val
 // break
 // }
 
-if(trigger==false){
+if(trigger===false){
 // console.log(e)
   if(x<this.length ){
 
@@ -114,7 +115,7 @@ e.val=mirror
 
 mirror=mirror2
 e=e.next
- 
+
 
 }
    else{
@@ -135,10 +136,10 @@ let nextNode=this.head
      }
 }
 if(trigger==true && e.val==value ){
-            
+
 
    let newNode=new Node(newVal)
-mirror= e.val  
+mirror= e.val
    e.val=newNode.val
    trigger=false
    this.length++;
@@ -146,21 +147,21 @@ mirror= e.val
 
     if(e.next!==null){
  e=e.next
-  
+
 
 
  }else if (e.next==null){
       //  console.log("ss")
 
 let newNode=new Node(mirror)
-     e.next=newNode 
+     e.next=newNode
      break
      }
-    
-  
+
+
 }else if (trigger){
   e=e.next
-              
+
 
   // return false
 }
@@ -204,7 +205,7 @@ console.log(e.val)
 
 mirror=mirror2
 
- 
+
 
 }
    else{
@@ -236,14 +237,14 @@ mirror= e.next.val
  }else if (e.next==null){
       //  console.log("ss")
 let newNode=new Node(newVal)
-     e.next=newNode 
+     e.next=newNode
      break
      }
-    
-  
+
+
 }else if (trigger){
   e=e.next
-              
+
 
   // return false
 }
@@ -297,9 +298,9 @@ if(L2){
 }
 
 }
-//  console.log(result.toString()) 
+//  console.log(result.toString())
   return result
-} 
+}
 
 reverse(list){
   let c=list.head
@@ -314,7 +315,7 @@ reverse(list){
         newList.insertBefore(temp,newValue)
   temp=c.val
   }
-  
+
   console.log(newList.toString())
   return newList
   }

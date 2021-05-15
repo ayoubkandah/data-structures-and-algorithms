@@ -1,6 +1,8 @@
+goog.require("LL");
 'use strict'
 const Linked = require("./linked-list")
 const linked=require("./linked-list")
+asded;
 
 describe("testing",()=>{
     let LL=new linked()
@@ -15,7 +17,6 @@ expect(LL.head).toEqual(null)
     })
 test("head",()=>{
     LL.insert(testNum)
-
 expect(LL.head.val).toEqual(testNum)
 expect(LL.head.next).toEqual(null)
 })
@@ -158,9 +159,9 @@ test("kth From End if k in the middle of the length",()=>{
     let LL4=new Linked()
     // LL.append(80)
     let head=10
-    
+
     LL4.insert(head)
-    
+
     let e=LL4.kthFromEnd(0)
     // console.log(e,"-------------")
     expect(e).toEqual(head)
@@ -208,7 +209,7 @@ let e= await LL5.zipLists(LL5,LL6)
 console.log(e,"0----------------")
     // console.log(e,"-------------")
     expect(e.toString()).toEqual( "{10}-->{20}-->{12}-->{22}-->{14}-->null")
-    
+
     expect(e.length).toEqual( 5)
 
 })

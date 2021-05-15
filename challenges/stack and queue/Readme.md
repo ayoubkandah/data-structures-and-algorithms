@@ -6,8 +6,10 @@ how to insert many values
 ## API
 <!-- Embedded whiteboard image -->
 create class for node and class for STACK && QUEUE and make function that PUSH AND ENQUEUE values and POP() DEQUEUE  value and isEmpty() and peek()
-## Test 
+## Test
 * for test  npm test stack-and-queue.
 
 ## white board
 ![img](./code10.png)
+
+

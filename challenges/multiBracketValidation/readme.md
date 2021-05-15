@@ -8,6 +8,6 @@ NA
 convert a string to array by using split("") and deal with the array by looping and push brackets to specific arrays and make if statements for every situation 
 ## Test 
 * for test  npm test multi-bracket-validation.
-
+## [pull_request](https://github.com/ayoubkandah/data-structures-and-algorithms/pull/29)
 ## white board
-![img](./code13.png)
+![img](./code1301.png)

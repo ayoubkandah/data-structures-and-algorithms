@@ -26,15 +26,15 @@ let starWarsPeople = [
 
 const sortStarWarsCharacters = (starWarsArr) => {
   // Solution code here...
- 
-   starWarsArr.sort(function(a, b){return b.height - a.height}); 
+
+   starWarsArr.sort(function(a, b){return b.height - a.height});
   return starWarsArr;
 }
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named removeThree that takes an index and an array. The function should removes three items in the array starting with the value at the index. 
+Write a function named removeThree that takes an index and an array. The function should removes three items in the array starting with the value at the index.
 ------------------------------------------------------------------------------------------------ */
 
 const removeThree = (idx, arr) => {
@@ -42,9 +42,9 @@ const removeThree = (idx, arr) => {
   let as=arr;
 
   as.splice(idx, 3);
-  
+
   return as;
-  
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -75,7 +75,7 @@ const howMuchPencil = (str) => {
   let result = [];
   // Solution code here...
   for(let x=0;x<=str.length;x++){
- result.push(str.slice(x, str.length));   
+ result.push(str.slice(x, str.length));
 
   }
   return( result);
@@ -89,7 +89,7 @@ For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 ------------------------------------------------------------------------------------------------ */
 const wordsToCharList = (arr) => {
   // Solution code here...
- 
+
 
   return arr.split(arr.charAt(arr.length+1))
 };
@@ -139,7 +139,8 @@ const listFoods = (recipe) => {
   let result = [];
   // Solution code here...
   let newArr=['Gruffalo', 'oats', 'brown sugar', 'flour', 'pure maple syrup', 'chopped nuts', 'baking soda', 'baking powder', 'cinnamon', 'melted butter', 'fresh water']
-for(let x=0;x<recipe.ingredients.length;x++){
+
+  for(let x=0;x<recipe.ingredients.length;x++){
 
 result.push(recipe.ingredients[x].slice(recipe.ingredients[x].indexOf(newArr[x])))
 
